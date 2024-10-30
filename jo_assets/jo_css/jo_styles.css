@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.jo_header, .jo_footer {
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.jo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jo_logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.jo_nav a {
+    color: #bb86fc;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.jo_nav a:hover {
+    background-color: #3700b3;
+}
+
+.jo_form-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.jo_form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #bb86fc;
+    text-align: center;
+}
+
+.jo_form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.jo_form-container input[type="text"],
+.jo_form-container input[type="email"],
+.jo_form-container input[type="password"],
+.jo_form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.jo_form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bb86fc;
+    border: none;
+    border-radius: 4px;
+    color: #121212;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.jo_form-container button:hover {
+    background-color: #3700b3;
+}
+
+.jo_container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.jo_footer {
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .jo_form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .jo_form-container label,
+    .jo_form-container input[type="text"],
+    .jo_form-container input[type="email"],
+    .jo_form-container textarea,
+    .jo_form-container button {
+        grid-column: span 2;
+    }
+
+    .jo_form-container h2 {
+        grid-column: span 2;
+    }
+}
